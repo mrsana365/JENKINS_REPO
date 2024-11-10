@@ -1,0 +1,245 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* ----------------left ----------------------------------------------------------------- */
+#left {
+  width: 80%;
+  height: 100%;
+  /* -->> For center */
+/* background-color: red; */
+}
+
+#left #left-top {
+  width: 100%;
+  height: 70%;
+  /* -->> For center */
+  background-color: rgb(0, 255, 68);
+  background-image: url(https://images.unsplash.com/photo-1466781783364-36c955e42a7f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D );
+  background-size: cover;
+  position: relative;
+
+}
+
+#left #left-bottom {
+  width: 100%;
+  height: 30%;
+  /* -->> For center */
+  background-color: black;
+  /* padding : (top &&  bottom )  (left && right)  */
+  padding: 100px 200px;
+}
+
+#lbtmcontent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  /* background-color: red; */
+}
+
+#contentleft {
+  width: 45%;
+  height: 100%;
+  /* background-color: yellow; */
+}
+
+#contentleft p {
+  width: 70%;
+  margin-top: 30px;
+  font-size: 12px;
+
+}
+
+#contentright {
+  width: 45%;
+  height: 100%;
+  /* background-color: rgb(170, 0, 255); */
+}
+
+.relem {
+  display: flex;
+
+}
+
+.row {
+  padding-right: 100px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.relemtext {
+  margin-left: 10px;
+}
+
+.relemtext h6 {
+  opacity: 0.5;
+  font-weight: 500;
+
+}
+
+#left-top #lefttop-bottom {
+  width: 60px;
+  height: 40px;
+  background-color: white;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  display: flex;
+}
+
+#lefttop-bottom i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----------------  right  ----------------------------------------------------------------------- */
+
+#right {
+  width: 20%;
+  height: 100%;
+  /* -->> For center */
+  /* background-color: rgb(34, 0, 255); */
+  /* border: 5px solid black; */
+}
+
+#right #rtop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+  /* -->> For center */
+  /* background-color: rgb(22, 160, 215); */
+  padding: 70px;
+}
+
+#rtop a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 10px;
+  margin-bottom: 30px;
+
+  text-transform: uppercase;
+  font-family: "Montserrat";
+
+}
+
+/* timestamp : 15:03*/
+/* #rtop a:nth-child(2) */
+#rtop #selected {
+  position: relative;
+  margin: 20px;
+
+}
+
+/* #rtop a:nth-child(2)::before */
+#rtop #selected::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translate(0, -50);
+
+  width: 10px;
+  height: 2px;
+  background-color: black;
+}
+
+/* timestamp : 21:00 */
+#icon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+#icon i {
+  font-size: 20px;
+}
+
+/* time 23:00 */
+#btmflower {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 100px;
+  height: 120px;
+  background-image: url(https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-color: red;
+  background-position: bottom;
+
+}
+
+#btmflower i {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.294);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#right #rbottom {
+  width: 100%;
+  height: 30%;
+  background-color: #dadada;
+}
+
+#rbottom {
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1504198266287-1659872e6590?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+
+#rbtm-box {
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  background-color: white;
+  top: 65%;
+  left: 5%;
+  border-radius: 5px;
+  padding: 15px 15px;
+
+}
+
+#rbtm-text {
+  display: flex;
+}
+
+#rbtm-arrow {
+  margin-left: 20px;
+}
